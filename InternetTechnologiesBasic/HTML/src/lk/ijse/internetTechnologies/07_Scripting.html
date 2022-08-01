@@ -14,10 +14,13 @@
 </head>
 <body>
 <h1>Hello How are you</h1>
+<button onclick="changeText()">Chanage</button>
 
 <script>
-    //simple js code for changing the h1 text
-    document.getElementsByTagName("h1")[0].innerText = "This was changed by JS";
+    function changeText() {
+        //simple js code for changing the h1 text
+        document.getElementsByTagName("h1")[0].innerText = "This was changed by JS";
+    }
 </script>
 
 <noscript>
