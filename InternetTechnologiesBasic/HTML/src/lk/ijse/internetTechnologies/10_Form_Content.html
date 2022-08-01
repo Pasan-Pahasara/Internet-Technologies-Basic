@@ -16,7 +16,7 @@
 <h1>How to create a Forms</h1>
 <hr>
 <!--action--><!--actual location which we wanted to send the form data-->
-<form action="gedara" method="post">
+<form action="gedara" method="post" id="cusForm">
     <fieldset>
         <legend>Customer Form</legend>
 
@@ -47,9 +47,9 @@
         <br>
 
         <label for="txtGenderMale">Male</label>
-        <input type="radio" id="txtGenderMale" name="gender" value="Male" required >
+        <input type="radio" id="txtGenderMale" name="gender" value="Male" required>
         <label for="txtGenderFemale">Female</label>
-        <input type="radio"  id="txtGenderFemale" name="gender" value="Female" required >
+        <input type="radio" id="txtGenderFemale" name="gender" value="Female" required>
         <br>
         <br>
 
@@ -79,7 +79,7 @@
         <br>
 
         <label for="txtTextBox">Accept terms and conditions</label>
-        <input type="checkbox" id="txtTextBox"  name="option" value="Accepted" required >
+        <input type="checkbox" id="txtTextBox" name="option" value="Accepted" required>
         <br>
         <br>
 
@@ -90,5 +90,12 @@
         <button type="button">Delete Customer</button>
     </fieldset>
 </form>
+<br>
+<br>
+<hr>
+<br>
+<button form="cusForm">Save Customer</button>
+<button form="cusForm">Update Customer</button>
+<button form="cusForm">Delete Customer</button>
 </body>
 </html>
