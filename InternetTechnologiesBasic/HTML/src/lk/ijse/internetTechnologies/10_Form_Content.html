@@ -16,70 +16,70 @@
 <h1>How to create a Forms</h1>
 <hr>
 <!--action--><!--actual location which we wanted to send the form data-->
-<form action="gedara" method="post" id="cusForm">
+<form action="gedara" id="cusForm" method="post">
     <fieldset>
         <legend>Customer Form</legend>
 
         <label for="txtCusID">Customer ID</label>
-        <input type="text" id="txtCusID" name="customerid" placeholder="C001" required pattern="(C)[0-9]{3}">
+        <input id="txtCusID" name="customerid" pattern="(C)[0-9]{3}" placeholder="C001" required type="text">
         <br>
         <br>
 
         <label for="txtCusName">Customer Name</label>
-        <input type="text" id="txtCusName" name="customername" placeholder="Ex: Pahasara" required disabled>
+        <input disabled id="txtCusName" name="customername" placeholder="Ex: Pahasara" required type="text">
         <br>
         <br>
 
         <label for="txtCusAddress">Customer Address</label>
-        <input type="text" id="txtCusAddress" name="customeraddress" placeholder="No 20, Galle" required value="No 20"
-               readonly>
+        <input id="txtCusAddress" name="customeraddress" placeholder="No 20, Galle" readonly required type="text"
+               value="No 17">
         <br>
         <br>
 
         <label for="txtCusBday">Customer BDay</label>
-        <input type="date" id="txtCusBday" name="cusbday" required>
+        <input id="txtCusBday" name="cusbday" required type="date">
         <br>
         <br>
 
         <label for="txtCusSalary">Customer Salary</label>
-        <input type="number" id="txtCusSalary" name="customersalary" placeholder="1000,00" required>
+        <input id="txtCusSalary" name="customersalary" placeholder="1000,00" required type="number">
         <br>
         <br>
 
         <label for="txtGenderMale">Male</label>
-        <input type="radio" id="txtGenderMale" name="gender" value="Male" required>
+        <input id="txtGenderMale" name="gender" required type="radio" value="Male">
         <label for="txtGenderFemale">Female</label>
-        <input type="radio" id="txtGenderFemale" name="gender" value="Female" required>
+        <input id="txtGenderFemale" name="gender" required type="radio" value="Female">
         <br>
         <br>
 
         <label for="txtCusEmail">Your Email</label>
-        <input type="email" id="txtCusEmail" name="cusemail" required>
+        <input id="txtCusEmail" name="cusemail" required type="email">
         <br>
         <br>
 
         <label for="txtCusPhoto">Your Photo</label>
-        <input type="file" id="txtCusPhoto" name="cusPhoto" required>
+        <input id="txtCusPhoto" name="cusPhoto" required type="file">
         <br>
         <br>
 
         <label for="txtCusTel">Your TP</label>
-        <input type="tel" id="txtCusTel" name="cusTel" required>
+        <input id="txtCusTel" name="cusTel" required type="tel">
         <br>
         <br>
 
         <label for="txtCusColorTone">Your Color Tone</label>
-        <input type="color" id="txtCusColorTone" name="cusColor" required>
+        <input id="txtCusColorTone" name="cusColor" required type="color">
         <br>
         <br>
 
         <label for="txtEngFlu">English Fluency</label>
-        <input type="range" min="0" max="100" id="txtEngFlu" name="cusLanguageFluency" required>
+        <input id="txtEngFlu" max="100" min="0" name="cusLanguageFluency" required type="range">
         <br>
         <br>
 
         <label for="selectCourses">Select Course</label>
-        <select name="selectedCourse" id="selectCourses" required>
+        <select id="selectCourses" name="selectedCourse" required>
             <optgroup label="First Group">
                 <option value="GDSE">GDSE</option>
                 <option value="CMJD">CMJD</option>
@@ -95,7 +95,7 @@
 
         <!--datalist-->
         <label for="txtColors">Choose favaurite Colors</label>
-        <input type="text" name="colors" id="txtColors" list="colorList">
+        <input id="txtColors" list="colorList" name="colors" type="text">
 
         <datalist id="colorList">
             <option value="RED">
@@ -109,7 +109,7 @@
 
         <!--Text suggestions-->
         <label for="realColors">Choose favourite Colors</label>
-        <input type="color" name="realColors" id="realColors" list="colorList2">
+        <input id="realColors" list="colorList2" name="realColors" type="color">
 
         <datalist id="colorList2">
             <option value="#fca103">
@@ -123,7 +123,7 @@
 
         <!--Text suggestions-->
         <label for="time">Time Selection</label>
-        <input type="time" name="time" id="time" list="timelist">
+        <input id="time" list="timelist" name="time" type="time">
 
         <datalist id="timelist">
             <option value="12:00">
@@ -142,18 +142,18 @@
 
         <!-- meter bar -->
         <label for="meter">Show Value Ranges</label>
-        <meter id="meter" min="0" max="100" low="33" high="66" optimum="80" value="67">Range</meter>
+        <meter high="66" id="meter" low="33" max="100" min="0" optimum="80" value="67">Range</meter>
         <br>
         <br>
 
         <!-- Text area -->
         <label for="txtopinion">Your opinion</label>
-        <textarea name="myOpinion" id="txtopinion" cols="100" rows="10"></textarea>
+        <textarea cols="100" id="txtopinion" name="myOpinion" rows="10"></textarea>
         <br>
         <br>
 
         <label for="txtTextBox">Accept terms and conditions</label>
-        <input type="checkbox" id="txtTextBox" name="option" value="Accepted" required>
+        <input id="txtTextBox" name="option" required type="checkbox" value="Accepted">
         <br>
         <br>
 
@@ -176,8 +176,8 @@
 <br>
 <br>
 <form oninput="dis.value=parseInt(a.value)+parseInt(b.value)">
-    <input type="range" name="a" value="10">
-    <input type="number" name="b" value="2">
+    <input name="a" type="range" value="10">
+    <input name="b" type="number" value="2">
     <output name="dis">0</output>
 </form>
 
