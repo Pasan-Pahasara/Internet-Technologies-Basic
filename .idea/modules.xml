@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/InternetTechnologiesBasic/CSS/CSS.iml" filepath="$PROJECT_DIR$/InternetTechnologiesBasic/CSS/CSS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InternetTechnologiesBasic/HTML/HTML.iml" filepath="$PROJECT_DIR$/InternetTechnologiesBasic/HTML/HTML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Internet-Technologies-Basic.iml" filepath="$PROJECT_DIR$/.idea/Internet-Technologies-Basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InternetTechnologiesBasic/Java_Script/Java_Script.iml" filepath="$PROJECT_DIR$/InternetTechnologiesBasic/Java_Script/Java_Script.iml" />
+    </modules>
+  </component>
+</project>
