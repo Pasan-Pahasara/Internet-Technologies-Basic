@@ -79,11 +79,16 @@
         <br>
 
         <label for="selectCourses">Select Course</label>
-        <select name="selectedCourse" id="selectCourses" required multiple>
-            <option value="GDSE">GDSE</option>
-            <option value="CMJD">CMJD</option>
-            <option value="DEP">DEP</option>
-            <option value="RMAD">RMAD</option>
+        <select name="selectedCourse" id="selectCourses" required>
+            <optgroup label="First Group">
+                <option value="GDSE">GDSE</option>
+                <option value="CMJD">CMJD</option>
+            </optgroup>
+
+            <optgroup label="Second Group">
+                <option value="DEP">DEP</option>
+                <option value="RMAD">RMAD</option>
+            </optgroup>
         </select>
         <br>
         <br>
