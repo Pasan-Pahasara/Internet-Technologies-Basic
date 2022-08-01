@@ -15,7 +15,7 @@
 <body>
 <h1>How to create a Forms</h1>
 <hr>
-<form>
+<form action="gedara">
     <fieldset>
         <legend>Customer Form</legend>
 
@@ -35,9 +35,11 @@
         <br>
 
         <label for="txtCusSalary">Customer Salary</label>
-        <input type="range" min="0" max="100" value="100" id="txtCusSalary">
+        <input type="number" id="txtCusSalary">
         <br>
         <br>
+
+        <input type="reset">
 
         <button>Save Customer</button>
     </fieldset>
