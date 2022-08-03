@@ -24,29 +24,33 @@
         }
 
         /*Class Selector - to select a common group of elements*/
-        .para{
+        .para {
             color: orange;
             background-color: green;
             border: 1px dashed red;
         }
 
-        /*Attribute Selector*/
-        [id]{
+        /*Attribute selector - to select elements using attributes*/
+        [href]{
             color: red;
             background: orange;
-            font-size: 50px;
+            font-size: 100px;
         }
-    </style>
 
+        [id="myH1"]{
+            color: red;
+            background: orange;
+            font-size: 100px;
+        }
+
+    </style>
 </head>
 <body>
-h1>Cascading Style Sheets.</h1>
+<h1>Cascading Style Sheets.</h1>
 <h1 id="myH1">Hello there How are you..!</h1>
 <h2>Hello there How are you..!</h2>
-<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam blanditiis consectetur
-    consequatur
-    corporis debitis eveniet excepturi laboriosam laborum magnam magni non nulla optio quas, quidem sequi temporibus ut
-    voluptas.</p>
+<a href="http://ijse.lk">Let's go to IJSE</a>
+
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam blanditiis consectetur consequatur
     corporis debitis eveniet excepturi laboriosam laborum magnam magni non nulla optio quas, quidem sequi temporibus ut
     voluptas.</p>
@@ -59,13 +63,25 @@ h1>Cascading Style Sheets.</h1>
     excepturi explicabo hic iste laboriosam odit porro quasi quod reiciendis repudiandae rerum sint suscipit!</p>
 <ol>
     <li>IJSE</li>
-    <li id="sndList">CMJD</li>
-    <li>GDSE</li>
-    <li>RWAD</li>
 </ol>
+
+<h2>Hello there How are you..!</h2>
+excepturi explicabo hic iste laboriosam odit porro quasi quod reiciendis repudiandae rerum sint suscipit!</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid at delectus deleniti distinctio, dolor eos,
     excepturi explicabo hic iste laboriosam odit porro quasi quod reiciendis repudiandae rerum sint suscipit!</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid at delectus deleniti distinctio, dolor eos,
     excepturi explicabo hic iste laboriosam odit porro quasi quod reiciendis repudiandae rerum sint suscipit!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid at delectus deleniti distinctio, dolor eos,
+    excepturi explicabo hic iste laboriosam odit porro quasi quod reiciendis repudiandae rerum sint suscipit!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid at delectus deleniti distinctio, dolor eos,
+    excepturi explicabo hic iste laboriosam odit porro quasi quod reiciendis repudiandae rerum sint suscipit!</p>
+
+<section>
+    <h1>selected</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <p>lorem</p>
+</section>
 </body>
 </html>
