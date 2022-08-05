@@ -23,13 +23,31 @@
         /*    background-color: orange;*/
         /*}*/
 
-        /* Descendent Combinator */
+        /* Descendent Combinator (h1 can be inside any where in a section - no need to be a direct child)*/
         body h1 {
+            color: red;
+        }
+
+        section h1{
             color: red;
         }
     </style>
 </head>
 <body>
+<main>
+    <section>
+
+        <div>
+            <h1>Hello there im inside lot of divas and section</h1>
+            <div>
+                <div>
+                    <h1>Hello there im inside lot of divas and section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
 <h1>CSS Combinators.!</h1>
 <section>
     <h1>Hello There</h1>
@@ -42,7 +60,7 @@
 </section>
 
 <main>
-    <h1></h1>
+    <h1>Hello there im inside main</h1>
 </main>
 
 <section>
