@@ -10,17 +10,22 @@
         /* General Siblings Combinator */
 
         /* Child Combinator (select direct h1 child of the body) */
-        section>h1{
-            color: red;
-        }
+        /*section>h1{*/
+        /*    color: red;*/
+        /*}*/
 
-        section>p{
-            color: red;
-            border: 1px solid red;
-        }
+        /*section>p{*/
+        /*    color: red;*/
+        /*    border: 1px solid red;*/
+        /*}*/
 
-        body>section>article>p{
-            background-color: orange;
+        /*body>section>article>p{*/
+        /*    background-color: orange;*/
+        /*}*/
+
+        /* Descendent Combinator */
+        body h1 {
+            color: red;
         }
     </style>
 </head>
@@ -46,14 +51,22 @@
         sapiente unde ut voluptas.</p>
 
     <article>
-        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
-            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+        <h1>Hello Im a H1 inside the article</h1>
+        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+            dolorem
+            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio
+            officia
             sapiente unde ut voluptas.</p>
 
-        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
-            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+            dolorem
+            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio
+            officia
             sapiente unde ut voluptas.</p>
     </article>
+    <p>Inside Section - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
+        incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+        sapiente unde ut voluptas.</p>
 </section>
 
 
