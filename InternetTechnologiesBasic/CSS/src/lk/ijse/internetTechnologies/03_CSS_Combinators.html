@@ -9,15 +9,19 @@
         /* Adjacent Combinator */
         /* General Siblings Combinator */
 
-        /* Child Combinator */
+        /* Child Combinator (select direct h1 child of the body) */
         section>h1{
             color: red;
+        }
+
+        section>p{
+            color: red;
+            border: 1px solid red;
         }
     </style>
 </head>
 <body>
 <h1>CSS Combinators.!</h1>
-
 <section>
     <h1>Hello There</h1>
     <ul>
@@ -26,6 +30,26 @@
         <li>C</li>
         <li>D</li>
     </ul>
+</section>
+
+<main>
+    <h1></h1>
+</main>
+
+<section>
+    <p>Inside Section - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
+        incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+        sapiente unde ut voluptas.</p>
+
+    <article>
+        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
+            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+            sapiente unde ut voluptas.</p>
+
+        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
+            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+            sapiente unde ut voluptas.</p>
+    </article>
 </section>
 
 
