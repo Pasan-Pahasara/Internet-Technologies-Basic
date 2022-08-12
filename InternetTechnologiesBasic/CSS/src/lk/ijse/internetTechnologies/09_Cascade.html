@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascading Style Sheets</title>
+    <style>
+        /* 1 + 100 = 101*/
+        h1#selectID {
+            color: red;
+        }
+
+        /* 1 + 10 = 11 */
+        h1.selectClass {
+            color: deeppink;
+        }
+
+        /* 1 + 100 + 10 = 111*/
+        h1#selectID.selectClass {
+            color: burlywood;
+        }
+
+        /* 10 + 100 = 110*/
+        .mainClass #selectID {
+            color: green;
+        }
+
+        /* 10 */
+        .selectClass {
+            color: yellow;
+        }
+
+        /* 10 + 1 = 11 */
+        .mainClass h1 {
+            color: orange;
+        }
+
+        /* 1 + 1 + 1 + 10 + 1 = 14 */
+        body > main > section:nth-child(2) h1 {
+            color: aqua;
+        }
+
+        /* 1 + 1 + 1 + 10 + 1 + 1 + 10 +  1 + 10 = 36 */
+        body > main > section:nth-child(2) > article > div:nth-child(2) > h1.selectClass {
+            color: chocolate !important;
+        }
+
+        /* 1 + 1 + 1 + 10 + 1 + 1 + 10 + 1 + 10 = 36 */
+        body > main > section:nth-child(2) > article > div:nth-child(2) h1.selectClass {
+            color: darkblue;
+        }
+
+        /* 1 + 1 + 10 + 100 + 1 + 10 + 1 + 100 + 10 + 1 + 100 + 10 + 1 + 10 = 356  */
+        body > main.mainClass#mainID > section:nth-child(2) > article#mainArticle.mainArticle > div#selected-div:nth-child(2) h1.selectClass {
+            color: darkmagenta;
+        }
+
+        /* 10 + 10 = 20 */
+        .mainArticle .selectClass {
+            color: blueviolet;
+        }
+
+        /*color: darksalmon; 1000*/
+        /*color: darkmagenta; 356*/
+        /*color: burlywood; 111*/
+        /*color: green; 110*/
+        /*color: red; 101 */
+        /*color: darkblue; 36*/
+        /*color: chocolate; 36*/
+        /*color: blueviolet; 20*/
+        /*color: aqua; 14*/
+        /*color: orange; 11*/
+        /*color: deeppink; 11 */
+        /*color: yellow; 10 */
+    </style>
+</head>
+<body>
+<main class="mainClass" id="mainID">
+    <section></section>
+    <section id="mainSection" class="mainSection">
+        <article id="mainArticle" class="mainArticle">
+            <div></div>
+            <div id="selected-div" class="selectedClass">
+                <h1 id="selectID" class="selectClass" style="color: darksalmon">Hello there..! Cascade Style Sheets</h1>
+            </div>
+            <div></div>
+        </article>
+    </section>
+    <section></section>
+</main>
+</body>
+</html>
