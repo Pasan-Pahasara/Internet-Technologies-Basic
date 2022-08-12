@@ -21,7 +21,6 @@
         /*length & font-size*/
         /*Relative Measurement Units*/
         /*Absolute Measurement Units*/
-
         /*Absolute Measurement Units*/ /*Fixed Units*/
         /*cm,  mm , in , pc , pt , px */
         /* div{
@@ -33,7 +32,6 @@
          div>p{
              font-size: 70px;
          }*/
-
         /*Relative Measurement Units*/
         /* Not fixed - always depend on others and calculate the value*/
         /* VW 0-100 , VH */
@@ -45,35 +43,56 @@
         /*    background-color: red;*/
         /*}*/
 
-        /* em */
-        div{
-            /*font-size: 20px;*/
+        /* em -  nearest element / rem -*/
+
+        /*  div {
+              !*font-size: 20px;*!
+          }
+          div > h1 {
+              font-size: 3em;
+          }
+          div > p {
+              font-size: 1em;
+          }*/
+
+        /* rem - root element (HTML) ?*/
+        div {
+            font-size: 20px;
         }
 
-        div>h1{
-            font-size: 3em;
+        div > h1 {
+            font-size: 3rem;
         }
 
-        div>p{
-            font-size: 1em;
+        div > p {
+            font-size: 1rem;
         }
+
     </style>
 </head>
-<body>
+<body style="font-size: 100px">
 <!--<h1>CSS Measurement Units</h1>-->
-<section ></section>
-<section style="font-size: 30px">
+<section></section>
+<section>
     <section>
         <div>
             <h1>Heading</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque distinctio doloremque doloribus eligendi, eos,
-                error, eveniet ex libero magnam nesciunt nisi possimus quo recusandae sequi sunt unde? Ad, asperiores.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque distinctio doloremque doloribus eligendi, eos,
-                error, eveniet ex libero magnam nesciunt nisi possimus quo recusandae sequi sunt unde? Ad, asperiores.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque distinctio doloremque doloribus eligendi, eos,
-                error, eveniet ex libero magnam nesciunt nisi possimus quo recusandae sequi sunt unde? Ad, asperiores.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque distinctio doloremque doloribus eligendi, eos,
-                error, eveniet ex libero magnam nesciunt nisi possimus quo recusandae sequi sunt unde? Ad, asperiores.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque distinctio doloremque doloribus
+                eligendi, eos,
+                error, eveniet ex libero magnam nesciunt nisi possimus quo recusandae sequi sunt unde? Ad,
+                asperiores.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque distinctio doloremque doloribus
+                eligendi, eos,
+                error, eveniet ex libero magnam nesciunt nisi possimus quo recusandae sequi sunt unde? Ad,
+                asperiores.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque distinctio doloremque doloribus
+                eligendi, eos,
+                error, eveniet ex libero magnam nesciunt nisi possimus quo recusandae sequi sunt unde? Ad,
+                asperiores.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque distinctio doloremque doloribus
+                eligendi, eos,
+                error, eveniet ex libero magnam nesciunt nisi possimus quo recusandae sequi sunt unde? Ad,
+                asperiores.</p>
         </div>
     </section>
 </section>
