@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CSS Measurement Units</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <style>
-    main {
-      width: 600px;
-      height: 400px;
-      border: 2px solid red;
-    }
+    <meta charset="UTF-8">
+    <title>CSS Measurement Units</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        main {
+            width: 600px;
+            height: 400px;
+            border: 2px solid red;
+        }
 
-    section {
-      border: 2px solid yellow;
-    }
+        section {
+            border: 2px solid yellow;
+        }
 
-    section > div {
-      width: 50%;
-      height: 50%;
-      background-color: yellow;
-    }
+        section > div {
+            width: 50%; /*get the nearest parent width and calculate the value*/
+            height: 50%; /*get the nearest parent height and calculate the value*/
+            background-color: yellow;
+            font-size: 200%;
+        }
 
-  </style>
+    </style>
 </head>
 <body>
 <main>
-  <section>
-    <div></div>
-  </section>
+    <section>
+        <div>
+            Hello there how are you.
+        </div>
+    </section>
 </main>
 </body>
 </html>
